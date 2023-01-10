@@ -58,11 +58,12 @@ function cadastrarDespesa(){
     )
 
     if(despesa.validarDados()) {
+        bd.gravar(despesa)
         //dialog de sucesso
-        console.log('Dados válidos')
+        $('#sucessoGravacao').modal('show')
     } else {
         //dilog de erro
-        console.log('Dados inválidos')
+        $('#erroGravacao').modal('show')
     }
         
 }
