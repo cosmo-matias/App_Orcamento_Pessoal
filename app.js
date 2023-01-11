@@ -87,6 +87,13 @@ function cadastrarDespesa(){
         document.getElementById('modal_btn').className = 'btn btn-success'
         document.getElementById('modal_btn').innerHTML = 'Voltar'
         $('#modalRegistraDespesas').modal('show')
+
+        ano.value = ''
+        mes.value = ''
+        dia.value = ''
+        tipo.value = ''
+        descricao.value = ''
+        valor.value = ''
     } else {
         //dilog de erro
         document.getElementById('modal_titulo').innerHTML = 'Erro na inclusão do registro'
